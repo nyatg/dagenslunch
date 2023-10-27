@@ -3,43 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
     <title>The Tech Restaurang</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <h1>TTR - The Tech Restaurang</h1>
-        <p>welcome text...</p>
-        <form>
-            <label for="nrOfPpl">How many people would like to eat? <span>(if you are a company more than 10 people contact us at: thetechrestaurang@ttr.com)</span></label>
-            <select name="nrOfPpl" id="nrOfPpl">
-                <option selected value="-">-</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-            </select>
-            <label>
-                <input type="radio" name="typeOfMeal" value="lunch">Lunch
-            </label>
-            <label>
-                <input type="radio" name="typeOfMeal" value="dinner">Dinner
-            </label>
-            
-        </form>
+        <div class="title">
+            <h1>TTR - The Tech Restaurang</h1>
+            <p>welcome text...</p>
+        </div>
+        <div class="container">
+            <form>
+                <label for="noPpl">How many people would like to eat? <span>(if you are a company more than 10 people contact us at: thetechrestaurang@ttr.com)</span></label>
+                <select name="noPpl" id="noPpl">
+                    <option selected value="-">-</option>
+                </select>
+                <label>
+                    <input type="radio" name="typeOfMeal" value="lunch">Lunch
+                </label>
+                <label>
+                    <input type="radio" name="typeOfMeal" value="dinner">Dinner
+                </label>
+            </form>
+        </div>
     </main>
     <footer>
 
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
