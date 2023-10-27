@@ -63,7 +63,6 @@ main {
     flex-direction: column;
 }
 form {
-    border: solid black;
     padding: 3rem;
     display: flex;
     flex-direction: column;
@@ -73,12 +72,19 @@ form {
 
 .container {
     border: solid ;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 5px;
 }
 
 .submitBtn {
-    border-radius: 10px;
+    border-radius: 15px;
     max-width: fit-content; 
+    background-color: white;
+    padding: 5px;
+    color: rgb(113, 187, 185);
+    border: solid #3e778a;
 }
+
 .formfield > * {
     margin: 1.5rem 0;
 }
