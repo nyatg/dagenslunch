@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Tech Restaurang</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>
 
     </header>
+
     <main>
         <div class="title">
             <h1>Restaurant Blabla</h1>
             <p>Welcome to restaurant Blabla</p>
         </div>
+        
         <div class="container">
-            <form>
-                <label for="noPpl">How many people would like to eat? <span>(if you are a company more than 10 people contact us at: thetechrestaurang@ttr.com)</span></label>
+            <form action="#">
+                <div class="formfield">
+                <label for="noPpl">How many people would like to eat?</label>
                 <select name="noPpl" id="noPpl">
                     <option selected value="-">-</option>
                 </select>
+
+                <div class="foodopt">
+                    <p>Please choose your preffered meal: </p>
                 <label>
                     <input type="radio" name="typeOfMeal" value="lunch">Lunch
                 </label>
                 <label>
                     <input type="radio" name="typeOfMeal" value="dinner">Dinner
                 </label>
+                </div>
+
+                <div class="info">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" name="phone">
+
+                <label for="diet">Any dietary restrictions or allergies?</label>
+                <textarea id="diet" name="diet" rows="3" cols="50"> </textarea>
+                </div>
+                </div>
+                <input type="submit" value="Take me to todays lunch offers!">
             </form>
         </div>
-    </label>
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name">
-    <label for="phone">Phone</label>
-    <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" name="phone">
 
-            <label for="diet">Any dietary restrictions or allergies?</label>
-            <textarea id="diet" name="diet" rows="3" cols="50"> </textarea>
-
-            <input type="submit" value="Take me to todays lunch offers!">
-            
-        </form>
     </main>
     <footer>
 
     </footer>
     <script src="./app.js"></script>
 </body>
+
 </html>

@@ -20,9 +20,26 @@ main {
 }
 .title {
     text-align: center;
+    
 }
+
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    border: solid black;
+}
+.container {
+    border: solid ;
 }
