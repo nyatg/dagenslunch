@@ -19,6 +19,7 @@ main {
     flex-direction: column;
     position: relative;
 }
+
 .title {
     text-align: center;
     margin-bottom: 60px;
@@ -64,8 +65,14 @@ form {
     border: solid black;
     display: flex;
     flex-direction: column;
-    flex-basis: 
+    align-items: center;
 }
+
 .container {
     border: solid ;
+}
+
+.submitBtn {
+    border-radius: 10px;
+    max-width: fit-content; 
 }
