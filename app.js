@@ -2,6 +2,7 @@ const selectInput = document.getElementById('noPpl');
 const main = document.querySelector('.main');
 const submitBtn = document.querySelector('.submitBtn');
 
+//Funktion som skapar valen i selector-inputen
 (() => {
     for(let i = 0; i < 30; i++) {
         let opt = document.createElement('option');
@@ -11,6 +12,9 @@ const submitBtn = document.querySelector('.submitBtn');
     }
 })();
 
+
+
+// Gör modalen med funktionalitet
 (function makeOffer() {
     const modal = document.createElement('dialog');
     modal.setAttribute("data-modal", '')
@@ -44,7 +48,10 @@ const submitBtn = document.querySelector('.submitBtn');
     main.appendChild(modal);
 })();
 
-submitBtn.addEventListener('click', () => {
+
+//Funktionalitet till "en burgare tack"
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     const modal = document.querySelector('[data-modal]');
     modal.showModal();
     modal.style.display = 'flex';
