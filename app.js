@@ -1,4 +1,5 @@
 const selectInput = document.getElementById('noPpl');
+const main = document.getElementsByTagName('main');
 
 (() => {
     for(let i = 0; i < 30; i++) {
@@ -9,4 +10,6 @@ const selectInput = document.getElementById('noPpl');
     }
 })();
 
-
+(function makeOffer() {
+    
+})
