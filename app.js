@@ -23,7 +23,7 @@ const submitBtn = document.querySelector('.submitBtn');
 
     const btn = document.createElement('a');
     btn.innerText = "Köp En McBurgare Genast!"
-    btn.href = '#';
+    btn.href = 'https://www.mcdonalds.com/se/sv-se.html';
 
     modal.addEventListener("click", e => {
         const dialogDimensions = modal.getBoundingClientRect();
