@@ -1,5 +1,6 @@
 const selectInput = document.getElementById('noPpl');
 const main = document.querySelector('.main');
+const submitBtn = document.querySelector('.submitBtn');
 
 (() => {
     for(let i = 0; i < 30; i++) {
@@ -41,3 +42,9 @@ const main = document.querySelector('.main');
     modal.appendChild(btn);
     main.appendChild(modal);
 })();
+
+submitBtn.addEventListener('click', () => {
+    const modal = document.querySelector('[data-modal]');
+    modal.showModal();
+    modal.style.display = 'flex';
+})
