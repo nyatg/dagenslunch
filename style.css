@@ -17,6 +17,7 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
@@ -25,9 +26,9 @@ main {
     margin-bottom: 60px;
 }
 .container {
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 [data-modal] {
     display: none;
@@ -63,8 +64,10 @@ main {
 }
 form {
     border: solid black;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     align-items: center;
 }
 
@@ -75,4 +78,7 @@ form {
 .submitBtn {
     border-radius: 10px;
     max-width: fit-content; 
+}
+.formfield > * {
+    margin: 1.5rem 0;
 }
