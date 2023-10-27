@@ -23,6 +23,7 @@ const submitBtn = document.querySelector('.submitBtn');
 
     const btn = document.createElement('a');
     btn.innerText = "Köp En McBurgare Genast!"
+    arguments.href = '#';
 
     modal.addEventListener("click", e => {
         const dialogDimensions = modal.getBoundingClientRect();
